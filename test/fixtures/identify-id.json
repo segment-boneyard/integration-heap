@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "appId": "app-key"
+  },
+  "input": {
+    "type": "identify",
+    "userId": "user-id",
+    "traits": {
+      "property": "value"
+    }
+  },
+  "output": {
+    "app_id": "app-key",
+    "identity": "user-id",
+    "properties": {
+      "property": "value",
+      "id": "user-id"
+    }
+  }
+}

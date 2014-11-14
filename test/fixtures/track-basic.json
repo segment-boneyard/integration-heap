@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "appId": "1535634150"
+  },
+  "input": {
+    "type": "track",
+    "userId": "user-id",
+    "event": "my-event",
+    "properties": {
+      "email": "jd@example.com",
+      "object": {
+        "reject":"this"
+      },
+      "array": ["things", "to", "reject"]
+    }
+  },
+  "output": {
+    "app_id": "1535634150",
+    "identity": "jd@example.com",
+    "event": "my-event",
+    "properties": {
+      "email": "jd@example.com"
+    }
+  }
+}
