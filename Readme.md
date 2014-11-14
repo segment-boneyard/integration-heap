@@ -1,8 +1,8 @@
-[![Build Status](https://circleci.com/gh/segmentio/integration-heap.png)](https://circleci.com/gh/segmentio/integration-heap)
+[![Build Status](https://circleci.com/gh/segmentio/integration-heap/tree/master.png?style=badge)](https://circleci.com/gh/segmentio/integration-heap/tree/master)
 
-# Heap server-side integration.
+# integration-heap
 
-Write me...
+Heap server-side integration for Segment.
 
 
 ## License
