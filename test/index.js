@@ -25,8 +25,7 @@ describe('Heap', function () {
       .name('Heap')
       .endpoint('https://heapanalytics.com/api')
       .ensure('settings.appId')
-      .channels(['mobile', 'server'])
-      .retries(2);
+      .channels(['mobile', 'server']);
   });
 
   describe('.validate()', function () {
