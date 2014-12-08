@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "reject": "0.0.1",
-    "segmentio-integration": "^3.0.3"
+    "segmentio-integration": "^3.0.5"
   },
   "devDependencies": {
     "istanbul": "0.x",
