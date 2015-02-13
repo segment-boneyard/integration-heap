@@ -40,35 +40,21 @@ describe('Heap', function () {
 
   describe('mapper', function(){
     describe('track', function(){
-      it('should map correctly, only passing numbers and strings as props', function(){
-        test.maps('track-basic');
-      });
-
-      it('should fallback to .username() if .email() is missing', function(){
-        test.maps('track-username');
-      });
-
-      it('should fallback to .userId() if .username() is missing', function(){
-        test.maps('track-id');
+      it('should map correctly', function(){
+        test.maps('track');
       });
     });
 
     describe('identify', function(){
-      it('should map correctly, only passing numbers and strings as props', function(){
-        test.maps('identify-basic');
-      });
-      it('should fallback to .username() if .email() is missing', function(){
-        test.maps('identify-username');
-      });
-      it('should fallback to .userId() if .username() is missing', function(){
-        test.maps('identify-id');
+      it('should map correctly', function(){
+        test.maps('identify');
       });
     });
   });
 
   describe('.track()', function () {
     it('should return success', function (done) {
-      var json = test.fixture('track-basic');
+      var json = test.fixture('track');
 
       test
         .set(settings)
@@ -87,7 +73,7 @@ describe('Heap', function () {
 
   describe('.identify()', function () {
     it('should return success', function (done) {
-      var json = test.fixture('identify-basic');
+      var json = test.fixture('identify');
 
       test
         .set(settings)

@@ -7,6 +7,7 @@
     "userId": "user-id",
     "event": "my-event",
     "properties": {
+      "pass": "pass",
       "email": "jd@example.com",
       "object": {
         "reject":"this"
@@ -16,10 +17,10 @@
   },
   "output": {
     "app_id": "1535634150",
-    "identity": "jd@example.com",
+    "identity": "user-id",
     "event": "my-event",
     "properties": {
-      "email": "jd@example.com"
+      "pass": "pass"
     }
   }
 }
