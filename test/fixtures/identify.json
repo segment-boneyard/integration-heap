@@ -1,16 +1,21 @@
 {
   "settings": {
-    "appId": "app-key"
+    "appId": "1535634150"
   },
   "input": {
     "type": "identify",
     "userId": "user-id",
     "traits": {
+      "email": "email@email.com",
       "property": "value"
-    }
+    },
+    "object": {
+      "reject":"this"
+    },
+    "array": ["things", "to", "reject"]
   },
   "output": {
-    "app_id": "app-key",
+    "app_id": "1535634150",
     "identity": "user-id",
     "properties": {
       "property": "value",
