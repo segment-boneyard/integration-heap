@@ -19,6 +19,7 @@
     "identity": "user-id",
     "properties": {
       "property": "value",
+      "_email": "email@email.com",
       "id": "user-id"
     }
   }

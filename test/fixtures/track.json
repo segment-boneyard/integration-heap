@@ -20,7 +20,8 @@
     "identity": "user-id",
     "event": "my-event",
     "properties": {
-      "pass": "pass"
+      "pass": "pass",
+      "_email": "jd@example.com"
     }
   }
 }
