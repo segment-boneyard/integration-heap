@@ -21,7 +21,8 @@
     "event": "my-event",
     "properties": {
       "pass": "pass",
-      "_email": "jd@example.com"
+      "_email": "jd@example.com",
+      "segment_source": true
     }
   }
 }
