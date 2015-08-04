@@ -22,7 +22,7 @@
     "properties": {
       "pass": "pass",
       "_email": "jd@example.com",
-      "segment_source": true
+      "segment_library": ""
     }
   }
 }
