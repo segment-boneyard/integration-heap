@@ -1,4 +1,9 @@
 
+1.0.10 / 2015-08-04
+===================
+
+  * Indicate which library the request was made from
+
 1.0.9 / 2015-08-04
 ==================
 
