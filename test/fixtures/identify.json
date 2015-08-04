@@ -20,7 +20,8 @@
     "properties": {
       "property": "value",
       "_email": "email@email.com",
-      "id": "user-id"
+      "id": "user-id",
+      "segment_source": true
     }
   }
 }
