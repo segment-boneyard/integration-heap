@@ -9,6 +9,11 @@
       "email": "email@email.com",
       "property": "value"
     },
+    "context": {
+      "library": {
+        "name": "analytics-ios"
+      }
+    },
     "object": {
       "reject":"this"
     },
@@ -21,7 +26,7 @@
       "property": "value",
       "_email": "email@email.com",
       "id": "user-id",
-      "segment_source": true
+      "segment_library": "analytics-ios"
     }
   }
 }
