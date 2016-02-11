@@ -5,24 +5,38 @@
   "input": {
     "type": "track",
     "userId": "user-id",
-    "event": "my-event",
+    "event": "TEEEMO2",
+    "context": {
+      "library": {
+        "name": "analytics-node"
+      }
+    },
     "properties": {
-      "pass": "pass",
+      "pass": 1,
       "email": "jd@example.com",
-      "object": {
-        "reject":"this"
-      },
-      "array": ["things", "to", "reject"]
+      "foo": {
+        "bar": {
+          "hello": "teemo"
+        },
+        "cheese": ["1", 2, "cheers"],
+        "products": [
+          {"A": "Jello"},
+          {"B": "Peanut"}
+        ]
+      }
     }
   },
   "output": {
     "app_id": "1535634150",
     "identity": "user-id",
-    "event": "my-event",
+    "event": "TEEEMO2",
     "properties": {
-      "pass": "pass",
+      "pass": "1",
       "_email": "jd@example.com",
-      "segment_library": ""
+      "segment_library": "analytics-node",
+      "foo.bar.hello": "teemo",
+      "foo.cheese": "[\"1\",2,\"cheers\"]",
+      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]"
     }
   }
 }
