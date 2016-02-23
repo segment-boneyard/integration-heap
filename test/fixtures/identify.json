@@ -4,29 +4,38 @@
   },
   "input": {
     "type": "identify",
-    "userId": "user-id",
+    "userId": "123456",
     "traits": {
-      "email": "email@email.com",
-      "property": "value"
+      "email": "teemo@teemo.com",
+      "property": 3,
+      "foo": {
+        "bar": {
+          "hello": "teemo"
+        },
+        "cheese": ["1", 2, "cheers"],
+        "products": [
+          {"A": "Jello"},
+          {"B": "Peanut"}
+        ]
+      }
     },
     "context": {
       "library": {
         "name": "analytics-ios"
       }
-    },
-    "object": {
-      "reject":"this"
-    },
-    "array": ["things", "to", "reject"]
+    }
   },
   "output": {
     "app_id": "1535634150",
-    "identity": "user-id",
+    "identity": "123456",
     "properties": {
-      "property": "value",
-      "_email": "email@email.com",
-      "id": "user-id",
-      "segment_library": "analytics-ios"
+      "property": "3",
+      "_email": "teemo@teemo.com",
+      "id": "123456",
+      "segment_library": "analytics-ios",
+      "foo.bar.hello": "teemo",
+      "foo.cheese": "[\"1\",2,\"cheers\"]",
+      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]"
     }
   }
 }

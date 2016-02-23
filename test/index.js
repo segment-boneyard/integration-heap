@@ -69,6 +69,18 @@ describe('Heap', function () {
         .track(helpers.track())
         .error('cannot POST /api/track (400)', done);
     });
+
+    it('should convert dates into ISO string', function(done){
+      var json = test.fixture('track');
+      json.input.properties.date = new Date('2016');
+      json.output.properties.date = '2016-01-01T00:00:00.000Z';
+
+      test
+        .set(settings)
+        .track(json.input)
+        .sends(json.output)
+        .expects(200, done);
+    });
   });
 
   describe('.identify()', function () {
@@ -85,8 +97,20 @@ describe('Heap', function () {
     it('should error on invalid creds', function(done){
       test
         .set({ appId: 'x' })
-        .track(helpers.identify())
+        .identify(helpers.identify())
         .error('cannot POST /api/identify (400)', done);
+    });
+
+    it('should convert dates into ISO string', function(done){
+      var json = test.fixture('identify');
+      json.input.traits.datetime = new Date('2016');
+      json.output.properties.datetime = '2016-01-01T00:00:00.000Z';
+
+      test
+        .set(settings)
+        .identify(json.input)
+        .sends(json.output)
+        .expects(200, done);
     });
   });
 });
