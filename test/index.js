@@ -98,7 +98,7 @@ describe('Heap', function () {
       test
         .set({ appId: 'x' })
         .identify(helpers.identify())
-        .error('cannot POST /api/identify (400)', done);
+        .error('cannot POST /api/add_user_properties (400)', done);
     });
 
     it('should convert dates into ISO string', function(done){
