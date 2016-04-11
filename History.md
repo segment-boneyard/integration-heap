@@ -1,4 +1,9 @@
 
+1.0.12 / 2016-04-11
+===================
+
+  * Updates API endpoint to POST api/add-user-properties from deprecated POST api/identify
+
 1.0.11 / 2016-02-23
 ===================
 
