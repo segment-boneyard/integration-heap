@@ -36,6 +36,12 @@ describe('Heap', function () {
     it('should be valid with appId', function () {
       test.valid({}, settings);
     });
+
+    it('should reject events older than 15 minutes', function() {
+      var tooOld = Date.now() - 900001;
+      var msg = { timestamp: new Date(tooOld) };
+      test.invalid(msg, settings);
+    });
   });
 
   describe('mapper', function(){
