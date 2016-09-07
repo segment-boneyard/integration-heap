@@ -8,6 +8,10 @@
     "traits": {
       "email": "teemo@teemo.com",
       "property": 3,
+      "products": [
+        { "foo": "bar", "bar": "baz"},
+        { "hello": "hello", "bye": "bye"}
+      ],
       "foo": {
         "bar": {
           "hello": "teemo"
@@ -35,7 +39,8 @@
       "segment_library": "analytics-ios",
       "foo.bar.hello": "teemo",
       "foo.cheese": "[\"1\",2,\"cheers\"]",
-      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]"
+      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]",
+      "products": "[{\"foo\":\"bar\",\"bar\":\"baz\"},{\"hello\":\"hello\",\"bye\":\"bye\"}]"
     }
   }
 }
