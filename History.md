@@ -1,4 +1,9 @@
 
+1.0.13 / 2016-09-07
+===================
+
+  * flatten products array and update integration base class
+
 1.0.12 / 2016-04-11
 ===================
 
