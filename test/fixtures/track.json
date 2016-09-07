@@ -12,8 +12,13 @@
       }
     },
     "properties": {
+      "skipThis": null,
       "pass": 1,
       "email": "jd@example.com",
+      "products": [
+        { "foo": "bar", "bar": "baz"},
+        { "hello": "hello", "bye": "bye"}
+      ],
       "foo": {
         "bar": {
           "hello": "teemo"
@@ -36,7 +41,8 @@
       "segment_library": "analytics-node",
       "foo.bar.hello": "teemo",
       "foo.cheese": "[\"1\",2,\"cheers\"]",
-      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]"
+      "foo.products": "[{\"A\":\"Jello\"},{\"B\":\"Peanut\"}]",
+      "products": "[{\"foo\":\"bar\",\"bar\":\"baz\"},{\"hello\":\"hello\",\"bye\":\"bye\"}]"
     }
   }
 }
