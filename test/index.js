@@ -67,7 +67,7 @@ describe('Heap', function () {
       test
         .set({ appId: 'x' })
         .track(helpers.track())
-        .error('cannot POST /api/track (400)', done);
+        .error('Bad Request', done);
     });
 
     it('should convert dates into ISO string', function(done){
@@ -98,7 +98,7 @@ describe('Heap', function () {
       test
         .set({ appId: 'x' })
         .identify(helpers.identify())
-        .error('cannot POST /api/add_user_properties (400)', done);
+        .error('Bad Request', done);
     });
 
     it('should convert dates into ISO string', function(done){
