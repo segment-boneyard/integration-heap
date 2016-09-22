@@ -1,5 +1,5 @@
 {
-  "name": "integration-heap",
+  "name": "@astronomerio/integration-heap",
   "version": "1.0.13",
   "private": true,
   "description": "Heap server-side integration",
