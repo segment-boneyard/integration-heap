@@ -25,16 +25,21 @@ describe('Heap', function () {
       .name('Heap')
       .endpoint('https://heapanalytics.com/api')
       .ensure('settings.appId')
+      .ensure('message.userId')
       .channels(['mobile', 'server']);
   });
 
   describe('.validate()', function () {
     it('should be invalid without appId', function () {
-      test.invalid({}, {});
+      test.invalid({ userId: 'han' }, {});
     });
 
     it('should be valid with appId', function () {
-      test.valid({}, settings);
+      test.valid({ userId: 'han' }, settings);
+    });
+
+    it('should be invalid if message does not contain userId', function() {
+      test.invalid({}, settings);
     });
   });
 
