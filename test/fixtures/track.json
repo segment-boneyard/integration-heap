@@ -6,6 +6,7 @@
     "type": "track",
     "userId": "user-id",
     "event": "TEEEMO2",
+    "timestamp": "2017-04-21T21:49:04.987Z",
     "context": {
       "library": {
         "name": "analytics-node"
@@ -35,6 +36,7 @@
     "app_id": "1535634150",
     "identity": "user-id",
     "event": "TEEEMO2",
+    "timestamp": "2017-04-21T21:49:04.987Z",
     "properties": {
       "pass": "1",
       "_email": "jd@example.com",
